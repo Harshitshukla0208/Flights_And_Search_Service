@@ -69,7 +69,7 @@ class FlightRepository {
     }
 
     async updateFlights(flightId, data) {
-         try {
+        try {
             await Flights.update(data, {
                 where: {
                     id: flightId
